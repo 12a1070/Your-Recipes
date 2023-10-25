@@ -3,7 +3,8 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
-  def show
+  def new
+    @recipe = Recipe.new
   end
 
 end
