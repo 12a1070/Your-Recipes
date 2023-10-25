@@ -12,7 +12,7 @@ class RecipesController < ApplicationController
       if @recipe.save
         redirect_to_index
       else
-        flash.now[:alert]= '項目を埋めてください'
+        flash.now[:notice]= '項目を埋めてください'
         render :new
       end
   end
