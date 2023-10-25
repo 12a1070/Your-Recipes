@@ -13,7 +13,7 @@ class RecipesController < ApplicationController
         redirect_to_index
       else
         flash.now[:notice]= '項目を埋めてください'
-        render :new
+        render 'new'
       end
   end
 
@@ -24,7 +24,10 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update(item_params)
-      redirect_to_@recipe
+      redirect_to_recipes_path
+    else
+      flash.now[:notice]= '項目を埋めてください'
+      render 'edit'
     end
   end
 
