@@ -7,4 +7,14 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
 
+  def create
+    @recipe = Recipe.new(recipe_params)
+      if @recipe.save
+        redirect_to_index
+      else
+        flash.now[:alert]= '項目を埋めてください'
+        render :new
+      end
+  end
+
 end
