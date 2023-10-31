@@ -1,0 +1,26 @@
+<h1>レシピ新規作成</h1>
+
+<div class="field">
+  <%= form.label :イメージ画像  %>
+  <%= form.file_field :photo %>
+</div>
+
+<div class="field">
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+
+<div class="field">
+  <%= form.label :必要な具材 %>
+  <%= form.text_field :material %>
+</div>
+
+<div class="field">
+  <%= form.label :料理手順 %>
+  <%= form.text_field :process %>
+</div>
+
+<div class="field">
+  <%= form.label :料理にかかる時間(分) %>
+  <%= form.text_field :cooking_minute %>
+</div>
