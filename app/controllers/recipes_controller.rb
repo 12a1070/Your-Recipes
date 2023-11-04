@@ -14,8 +14,9 @@ class RecipesController < ApplicationController
     # redirect_to recipe_path
         # redirect_to  controller: :recipes, action: :index
     else
-      flash.now[:notice]= '項目を埋めてください'
-      render 'new'
+      # flash.now[:notice]= '項目を埋めてください'
+      # render 'new'
+      render :new, status: :unprocessable_entity
     end
   end
 
