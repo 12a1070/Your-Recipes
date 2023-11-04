@@ -1,6 +1,7 @@
 <h1>レシピ新規作成</h1>
 
 <%= form_with model: @recipe, local: true do |form| %>
+  <%= render 'layouts/error_messages', model: form.object %>
   <div>
     <%= form.label :photo,"イメージ画像" %>
     <%= form.file_field :photo %>
