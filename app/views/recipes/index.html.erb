@@ -2,5 +2,8 @@
 <% @recipes.each do | recipe| %>
   <p>タイトル</p>
   <span><%= recipe.title %></span>
-  <p>投稿者</p>
+  <p>作成者</p>
+  <span><%= recipe.user.name %></span>
+  <p>投稿日</p>
+
 <% end %>
