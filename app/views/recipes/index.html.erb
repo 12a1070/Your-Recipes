@@ -1,5 +1,6 @@
 <h1>投稿一覧</h1>
 <% @recipes.each do | recipe| %>
+  <%= image_tag recipe.photo_url %>
   <p>タイトル</p>
   <span><%= recipe.title %></span>
   <p>作成者:</p>
