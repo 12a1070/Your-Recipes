@@ -1,5 +1,10 @@
 <h1>投稿一覧</h1>
 <% @recipes.each do | recipe| %>
+  <p><%= image_tag recipe.photo_url %></p>
   <p>タイトル</p>
   <span><%= recipe.title %></span>
+  <p>作成者:</p>
+  <span><%= recipe.user.name %></span>
+  <p>投稿日:</p>
+  <%= recipe.created_at.strftime("%Y年 %m月 %d日").to_s %>
 <% end %>
