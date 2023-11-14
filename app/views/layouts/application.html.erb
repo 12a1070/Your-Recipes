@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YourRecipes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,9 +11,10 @@
 
   <body>
     <header>
+      <%= link_to 'Your Recipes', recipes_path %>
         <% if user_signed_in? %>
           <li>
-            <%= link_to "レシピを作成する", root_path %>
+            <%= link_to "レシピを作成する", new_recipe_path %>
           </li>
           <li>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
