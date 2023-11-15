@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <%= link_to 'Your Recipes', recipes_path %>
+      <%= link_to 'Your Recipes', root_path %>
         <% if user_signed_in? %>
           <li>
             <%= link_to "レシピを作成する", new_recipe_path %>
