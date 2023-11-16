@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
       redirect_to_recipes_path
     else
       flash.now[:notice]= '項目を埋めてください'
-      render 'edit'
+      render :edit
     end
   end
 
