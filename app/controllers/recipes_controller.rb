@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
 
-  before_action :correct_user, only: [:edit, :update]
+  # before_action :correct_user, only: [:edit, :update]
 
   def index
     @recipes = Recipe.all
@@ -21,6 +21,7 @@ class RecipesController < ApplicationController
 
   def edit
     @recipe = Recipe.find(params[:id])
+
     redirect_to root_path unless current_user.id == @recipe.user_id
   end
 
