@@ -21,8 +21,9 @@ class RecipesController < ApplicationController
 
   def edit
     @recipe = Recipe.find(params[:id])
-
-    redirect_to root_path unless current_user.id == @recipe.user_id
+    unless user_signed_in? && current_user.id == @recipe.user_id
+      redirect_to action: :index
+    end
   end
 
   def update
