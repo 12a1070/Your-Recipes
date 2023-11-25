@@ -1,7 +1,5 @@
 class RecipesController < ApplicationController
 
-  # before_action :correct_user, only: [:edit, :update]
-
   def index
     @recipes = Recipe.all
   end
@@ -29,7 +27,6 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update(recipe_params)
-      # redirect_to_recipes_path
       redirect_to root_path
     else
       flash.now[:notice]= '項目を埋めてください'
@@ -50,7 +47,6 @@ class RecipesController < ApplicationController
   def recipe_params
     params.require(:recipe).permit(:photo, :title, :material, :process, :cooking_minute).
     merge(user_id: current_user.id)
-    # merge(user_id: current_user.id,id: params[:recipe_id])
   end
 
 end
