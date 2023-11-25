@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+
   def index
     @recipes = Recipe.all
   end
@@ -18,15 +19,18 @@ class RecipesController < ApplicationController
 
   def edit
     @recipe = Recipe.find(params[:id])
+    unless user_signed_in? && current_user.id == @recipe.user_id
+      redirect_to action: :index
+    end
   end
 
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update(recipe_params)
-      redirect_to_recipes_path
+      redirect_to root_path
     else
       flash.now[:notice]= '項目を埋めてください'
-      render 'edit'
+      render :edit
     end
   end
 
@@ -42,7 +46,7 @@ class RecipesController < ApplicationController
 
   def recipe_params
     params.require(:recipe).permit(:photo, :title, :material, :process, :cooking_minute).
-    merge(user_id: current_user.id, id: params[:recipe_id])
+    merge(user_id: current_user.id)
   end
 
 end
