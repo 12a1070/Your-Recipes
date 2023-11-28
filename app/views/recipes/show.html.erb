@@ -1,0 +1,15 @@
+<span><%= @recipe.title %></span>
+<p>調理時間:</p>
+<span><%= @recipe.cooking_minute %>分</span>
+<p>作成者:</p>
+<span><%= @recipe.user.name %></span>
+<% if user_signed_in? %>
+    <% if @recipe.user_id == current_user.id %>
+      <span><%= link_to "編集する", edit_recipe_path(@recipe) %></span>
+    <% end %>
+<% end %>
+<p><%= image_tag @recipe.photo_url %></p>
+<p>必要な具材</p>
+<span><%= @recipe.material %></span>
+<p>料理手順</p>
+<span><%= @recipe.process %></span>
