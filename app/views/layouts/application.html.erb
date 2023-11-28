@@ -13,19 +13,19 @@
     <header>
       <%= link_to 'Your Recipes', root_path %>
         <% if user_signed_in? %>
-          <li>
+          <ul>
             <%= link_to "レシピを作成する", new_recipe_path %>
-          </li>
+          </ul>
           <li>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
           </li>
         <% else %>
-          <li>
+          <ul>
             <%= link_to "新規登録", new_user_registration_path %>
-          </li>
-          <li>
+          </ul>
+          <ul>
             <%= link_to "ログイン", new_user_session_path %>
-          </li>
+          </ul>
         <% end %>
       </header>
     <%= yield %>
