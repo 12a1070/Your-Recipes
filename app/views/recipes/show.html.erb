@@ -13,3 +13,8 @@
 <span><%= @recipe.material %></span>
 <p>料理手順</p>
 <span><%= @recipe.process %></span>
+<% if user_signed_in? %>
+  <% if @recipe.user_id == current_user.id %>
+    <%= link_to 'レシピを削除する',recipe_path(@recipe.id), data: { turbo_method: :delete, turbo_confirm: " 本当に削除しますか?" } %>
+  <% end %>
+<% end %>
