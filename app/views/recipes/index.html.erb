@@ -1,5 +1,9 @@
 <% @recipes.each do | recipe| %>
-  <p><%= image_tag recipe.photo_url %></p>
+  <p>
+    <% if recipe.photo_url.present? %>
+      <%= image_tag recipe.photo_url %>
+    <% end %>
+  </p>
   <%= link_to recipe.title, recipe_path(recipe) %>
   <p>作成者:</p>
   <span><%= recipe.user.name %></span>
