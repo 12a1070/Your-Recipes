@@ -8,7 +8,11 @@
       <span><%= link_to "編集する", edit_recipe_path(@recipe) %></span>
     <% end %>
 <% end %>
-<p><%= image_tag @recipe.photo_url %></p>
+<p>
+  <% if @recipe.photo_url.present? %>
+    <%= image_tag @recipe.photo_url %>
+  <% end %>
+</p>
 <p>必要な具材</p>
 <span><%= @recipe.material %></span>
 <p>料理手順</p>
