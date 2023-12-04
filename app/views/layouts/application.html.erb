@@ -16,9 +16,9 @@
           <ul>
             <%= link_to "レシピを作成する", new_recipe_path %>
           </ul>
-          <li>
+          <ul>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
-          </li>
+          </ul>
         <% else %>
           <ul>
             <%= link_to "新規登録", new_user_registration_path %>
