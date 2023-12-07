@@ -6,6 +6,7 @@ class Recipe < ApplicationRecord
   validates :process, presence: true
 
   def self.looks(word)
+# タイトルのカラムに含まれる単語を表示
     where("title LIKE?","%#{word}%")
   end
 
