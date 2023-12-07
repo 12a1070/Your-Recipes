@@ -2,6 +2,7 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.all
+
   end
 
   def new
@@ -46,6 +47,7 @@ class RecipesController < ApplicationController
       redirect_to root_path
     end
   end
+
 
   private
 
