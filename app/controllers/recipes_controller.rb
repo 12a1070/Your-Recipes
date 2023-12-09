@@ -2,6 +2,11 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.all
+# 検索したテキストがあれば
+    if params[:word]
+# 検索したワードを含むものを表示させる
+    @recipes = Recipe.looks(params[:word])
+    end
   end
 
   def new
@@ -46,6 +51,7 @@ class RecipesController < ApplicationController
       redirect_to root_path
     end
   end
+
 
   private
 
