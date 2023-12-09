@@ -1,4 +1,6 @@
-<%= render partial: 'search', locals: { f: form_with(url: search_path, local: true, method: :get) } %>
+<%= render partial: 'search'
+# , locals: { f: form_with(url: search_path, local: true, method: :get) }
+%>
 
 <% @recipes.each do | recipe| %>
   <div>
