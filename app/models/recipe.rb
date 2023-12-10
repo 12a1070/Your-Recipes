@@ -6,6 +6,10 @@ class Recipe < ApplicationRecord
   validates :material, presence: true
   validates :process, presence: true
 
+  def favorited_by(user)
+    Favorite.find_by(user_id: user.id, recipe_id: id)
+  end
+
   def self.looks(word)
 # タイトルのカラムに含まれる単語を表示
     where("title LIKE?","%#{word}%")
