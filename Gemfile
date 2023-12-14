@@ -70,6 +70,7 @@ group :test do
   gem "selenium-webdriver"
 
 end
+gem 'better_errors'
 gem 'carrierwave'
 gem 'devise'
 gem 'devise-i18n-views'

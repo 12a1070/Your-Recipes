@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :recipes do
-    resources :favourites, only: [:create, :destroy]
+    resources :favorites, only: [:create, :destroy]
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -17,15 +17,16 @@
   <span><%= @recipe.material %></span>
 <div>料理手順</div>
   <span><%= @recipe.process %></span>
-
-  <% if current_user != @recipe.user %>
-      <div class="recipe-like">
+  <% if user_signed_in? %>
+    <% if current_user != @recipe.user %>
+      <div class="recipe-favorite">
       <% if @recipe.favorited_by(current_user).blank? %>
-        <div>お気に入り</div><%= link_to "登録する", recipe_likes_path(@recipe), method: :post, class: "btn btn-success btn-sm" %>
+        <div>お気に入り</div><%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %>
       <% else %>
-        <div>お気に入り</div><%= link_to "解除する", recipe_like_path(@recipe,@recipe.liked_by(current_user)), method: :delete, class: "btn btn-outline-success btn-sm" %>
+        <div>お気に入り</div><%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete }, class: "btn btn-outline-success btn-sm" %>
       <% end %>
       </div>
+    <% end %>
   <% end %>
 
 <% if user_signed_in? %>

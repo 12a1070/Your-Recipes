@@ -1,13 +1,13 @@
 class FavoritesController < ApplicationController
 
-  before_action :set_recipe
   before_action :authenticate_user!   # ログイン中のユーザーのみに許可
 
 #お気に入りレシピ一覧
 
   # お気に入り登録
   def create
-    @favorite = current_user.favorite.build(favorite_params)
+    @favorite = current_user.favorites.build(favorite_params)
+# favoriteはmodelのfavoritesに従う
     @recipe = @favorite.recipe
     if @favorite.valid?
       @favorite.save
