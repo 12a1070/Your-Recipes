@@ -15,7 +15,8 @@
         <% if user_signed_in? %>
           <div>
             <%= link_to "レシピを作成する", new_recipe_path %>
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
+            <%= link_to "お気に入り一覧",recipe_favorites_path(current_user) %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
           </div>
         <% else %>
           <div>
