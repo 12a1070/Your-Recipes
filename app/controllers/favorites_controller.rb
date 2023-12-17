@@ -2,7 +2,11 @@ class FavoritesController < ApplicationController
 
   before_action :authenticate_user!   # ログイン中のユーザーのみに許可
 
-#お気に入りレシピ一覧
+
+  def index
+    # ログインユーザーがお気に入りに登録されているレシピを全て取得
+    @favorite_recipes = current_user.favorites.map(&:recipe)
+  end
 
   # お気に入り登録
   def create
@@ -12,6 +16,9 @@ class FavoritesController < ApplicationController
     if @favorite.valid?
       @favorite.save
       redirect_to recipe_path(@recipe)
+    else
+      # エラー処理
+      redirect_to recipes_path # レシピ一覧画面にリダイレクト
     end
   end
 
@@ -21,6 +28,8 @@ class FavoritesController < ApplicationController
     @recipe = @favorite.recipe
     if @favorite.destroy
       redirect_to recipe_path(@recipe)
+    else
+      redirect_to recipes_path
     end
   end
 

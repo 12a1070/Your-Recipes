@@ -1,9 +1,11 @@
 <div>あなたのお気に入り一覧</div>
-<% @favorites.each do |favorite| %>
-  <div>
-    <%= image_tag favorite.recipe.image_url %>
-    <%= favorite.recipe.title %>
-    <%= favorite.recipe.user.name %>
-    <%= favorite.recipe.created_at.strftime('%Y年%m月%d日') %>
+<% @favorite_recipes.each do |recipe| %>
+  <div class="recipe-item">
+    <% if recipe.photo_url.present? %>
+      <%= image_tag recipe.photo_url, alt: recipe.title %>
+    <% end %>
+    <div><%= link_to recipe.title, recipe_path(recipe) %></div>
+    <div>作成者: <%= recipe.user.name %></div>
+    <div>投稿日: <%= recipe.created_at.strftime("%Y年 %m月 %d日") %></div>
   </div>
 <% end %>
