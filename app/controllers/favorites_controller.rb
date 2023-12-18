@@ -15,7 +15,7 @@ class FavoritesController < ApplicationController
     if current_user.nil?
       # ログインしていない場合の処理
       redirect_to root_path unless current_user
-    else
+      #ログインしていたら
       @favorite = current_user.favorites.build(favorite_params)
       @recipe = @favorite.recipe
       if @favorite.valid?
@@ -29,8 +29,8 @@ class FavoritesController < ApplicationController
   def destroy
     if current_user.nil?
       # ログインしていない場合の処理
-      redirect_to recipes_path # レシピ一覧画面にリダイレクト
-    else
+      redirect_to root_path unless current_user # レシピ一覧画面にリダイレクト
+      #　ログインされているならレシピ一覧へ遷移
       @favorite = Favorite.find(params[:id])
       @recipe = @favorite.recipe
       if @favorite.destroy
