@@ -19,13 +19,13 @@
   <span><%= @recipe.process %></span>
   <% if user_signed_in? %>
     <% if current_user != @recipe.user %>
-      <div class="recipe-favorite">
+    <div class="recipe-favorite">
       <% if @recipe.favorited_by(current_user).blank? %>
-        <div>お気に入り</div><%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %>
+        <div>お気に入り</div><%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %></div>
       <% else %>
-        <div>お気に入り</div><%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete }, class: "btn btn-outline-success btn-sm" %>
+        <div>お気に入り</div><%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete }, class: "btn btn-outline-success btn-sm" %></div>
       <% end %>
-      </div>
+    </div>
     <% end %>
   <% end %>
 

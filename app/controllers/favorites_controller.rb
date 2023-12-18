@@ -30,7 +30,7 @@ class FavoritesController < ApplicationController
     if current_user.nil?
       # ログインしていない場合の処理
       redirect_to root_path unless current_user # レシピ一覧画面にリダイレクト
-      #　ログインされているならレシピ一覧へ遷移
+      # ログインされているならレシピ一覧へ遷移
       @favorite = Favorite.find(params[:id])
       @recipe = @favorite.recipe
       if @favorite.destroy
