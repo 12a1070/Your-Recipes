@@ -11,12 +11,10 @@ class FavoritesController < ApplicationController
   end
 
   # お気に入り登録
-
-
   def create
     if current_user.nil?
       # ログインしていない場合の処理
-      redirect_to recipes_path
+      redirect_to root_path unless current_user
     else
       @favorite = current_user.favorites.build(favorite_params)
       @recipe = @favorite.recipe
@@ -28,7 +26,6 @@ class FavoritesController < ApplicationController
   end
 
   # # お気に入り削除
-
   def destroy
     if current_user.nil?
       # ログインしていない場合の処理
