@@ -1,8 +1,5 @@
 class FavoritesController < ApplicationController
 
-  # before_action :authenticate_user!, only: [ :index]   # ログイン中のユーザーのみに許可
-
-
   def index
     if current_user.nil?
       # ログインしていない場合の処理
