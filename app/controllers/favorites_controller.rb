@@ -1,5 +1,5 @@
 class FavoritesController < ApplicationController
-  before_action :redirect_to_root_path, only: %i(index create destroy)
+  before_action :redirect_to_root_path, only: %i[index create destroy]
 
   def index
     @favorite_recipes = current_user.favorites.map(&:recipe)
@@ -9,10 +9,10 @@ class FavoritesController < ApplicationController
   def create
     @favorite = current_user.favorites.build(favorite_params)
     @recipe = @favorite.recipe
-    if @favorite.valid?
-      @favorite.save
-      redirect_to recipe_path(@recipe)
-    end
+    return unless @favorite.valid?
+
+    @favorite.save
+    redirect_to recipe_path(@recipe)
   end
 
   # お気に入り削除
@@ -27,12 +27,12 @@ class FavoritesController < ApplicationController
   end
 
   private
-  
+
   def favorite_params
     params.permit(:recipe_id)
   end
 
   def redirect_to_root_path
-    redirect_to root_path if !current_user
+    redirect_to root_path unless current_user
   end
 end
