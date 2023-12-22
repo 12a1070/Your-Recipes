@@ -1,12 +1,11 @@
 class RecipesController < ApplicationController
-
   def index
     @recipes = Recipe.all
-# 検索したテキストがあれば
-    if params[:word]
-# 検索したワードを含むものを表示させる
+    # 検索したテキストがあれば
+    return unless params[:word]
+
+    # 検索したワードを含むものを表示させる
     @recipes = Recipe.looks(params[:word])
-    end
   end
 
   def new
@@ -24,40 +23,37 @@ class RecipesController < ApplicationController
 
   def edit
     @recipe = Recipe.find(params[:id])
-    unless user_signed_in? && current_user.id == @recipe.user_id
-      redirect_to action: :index
-    end
+    return if user_signed_in? && current_user.id == @recipe.user_id
+
+    redirect_to action: :index
   end
 
   def show
     @recipe = Recipe.find(params[:id])
   end
 
-
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update(recipe_params)
       redirect_to root_path
     else
-      flash.now[:notice]= '項目を埋めてください'
+      flash.now[:notice] = '項目を埋めてください'
       render :edit
     end
   end
 
-  def  destroy
+  def destroy
     @recipe = Recipe.find(params[:id])
-    if @recipe.user_id == current_user.id
-      @recipe.destroy
-      redirect_to root_path
-    end
-  end
+    return unless @recipe.user_id == current_user.id
 
+    @recipe.destroy
+    redirect_to root_path
+  end
 
   private
 
   def recipe_params
-    params.require(:recipe).permit(:photo, :title, :material, :process, :cooking_minute).
-    merge(user_id: current_user.id)
+    params.require(:recipe).permit(:photo, :title, :material, :process, :cooking_minute)
+          .merge(user_id: current_user.id)
   end
-
 end

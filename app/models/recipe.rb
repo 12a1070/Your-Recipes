@@ -1,6 +1,6 @@
 class Recipe < ApplicationRecord
   belongs_to :user
-  has_many :favorites, dependent: :destroy #レシピ削除されたらお気に入りも解除
+  has_many :favorites, dependent: :destroy # レシピ削除されたらお気に入りも解除
   mount_uploader :photo, PhotoUploader
   validates :title, presence: true
   validates :material, presence: true
@@ -11,8 +11,7 @@ class Recipe < ApplicationRecord
   end
 
   def self.looks(word)
-# タイトルのカラムに含まれる単語を表示
-    where("title LIKE?","%#{word}%")
+    # タイトルのカラムに含まれる単語を表示
+    where('title LIKE?', "%#{word}%")
   end
-
 end
