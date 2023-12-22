@@ -35,7 +35,6 @@ class FavoritesController < ApplicationController
       else
       redirect_to recipes_path
       end
-    end
   end
 
 
