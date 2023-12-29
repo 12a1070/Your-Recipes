@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* Header styling */
+
+.header{
+  background-color: #ebebeb;
+  display: flex;
+  height: 76px;
+  /* width: 1294px; */
+  position: relative;
+}
+
+
+.header-link {
+  background-color: 000000;
+  position: absolute;
+  left: 31.65px;
+  top: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.57px;
+}
+
+.user-links {
+  position: absolute;
+  left: 959px;
+  top: 20px;
+  background-color: D9D9D9;
+  padding-left: 91px;
+  /* margin-left: 91px; */
+}
+
+
+/* Body styling */
+.container {
+  /* Your container styles here */
+}
+
+/* Additional styling for other elements as needed */
