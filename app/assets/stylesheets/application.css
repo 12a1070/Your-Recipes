@@ -19,23 +19,44 @@
 
 /* すべてのページに適応される設定 */
 html {
-  font-family: inter;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
 }
+
 
 /* すべてのページに適応 ヘッダー */
 
 header {
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   color: #000000;
+  font-weight: bold;
   height: 76px;
-  font-weight: bold
+  display: flex;
+  justify-content: space-between;
 }
 
-top {
-  color: #000000;
+.top {
   font-size: 36px;
+  text-decoration: none;
+  width: 36px;
+
 }
 
+.nav ul {
+  list-style: none;
+  gap: 100px;
+  color: #D9D9D9;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.navlink {
+  text-decoration: none;
+
+}
 
 
 /* すべてのページに適応 メイン */
@@ -43,9 +64,6 @@ top {
 
 /* すべてのページに適応 フッター */
 
-body{
-
-}
 
 
 /* Body styling */
