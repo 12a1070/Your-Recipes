@@ -18,7 +18,7 @@
         <h2>
           <%= link_to 'Your Recipes', root_path, class:"top" %>
         </h2>
-        <div class ="nav">
+        <div class="nav">
           <ul>
             <% if user_signed_in? %>
               <li><%= link_to "レシピを作成する", new_recipe_path, class:"navlink"  %></li>
