@@ -1,22 +1,7 @@
 main {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction:column;
-  place-items: center;
-  gap: 2rem;
-  text-decoration: none;
+
 }
 
-.recipe {
-  display: -webkit-flex;
-  text-decoration: none;
-}
+.search {
 
-.li{
-  display: -webkit-flex;
-}
-
-ul{
-  list-style: none;
 }
