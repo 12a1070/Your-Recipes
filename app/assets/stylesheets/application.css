@@ -43,27 +43,27 @@ header {
 
 }
 
-.nav {
+.nav ul {
   list-style: none;
   gap: 50px 50px;
+  /* ログイン、登録を横並び */
   display: flex;
-  justify-content: space-evenly;
+/* ログイン系統を右端、上端から少し空白 */
   margin-right: 2rem;
-  margin-bottom: 5rem;
-
+  margin-top: 2rem;
 
 }
 
-.navlink {
-  text-decoration: none;
-  margin-left: 2rem;
-  display: flex;
-}
 
 
 /* すべてのページに適応 メイン */
 
-
+main {
+/* ページ全体を横書きで中央に */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /* すべてのページに適応 フッター */

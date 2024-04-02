@@ -1,7 +1,33 @@
+
+/* indexページ共通設定 */
 main {
+  display: flex;
+  justify-content: center;
+  gap: 10rem 10rem;
 
 }
 
+/* 検索欄 */
 .search {
+  display: flex;
+  gap: 1rem 1rem;
+}
+
+/* 投稿した料理 */
+.recipe {
+
+}
+
+/* 投稿の項目 */
+
+.list li{
+  /* リストの点を削除 */
+  list-style: none;
+
+}
+
+/* 料理の詳細リンク */
+.h3{
+  text-decoration: none;
 
 }
