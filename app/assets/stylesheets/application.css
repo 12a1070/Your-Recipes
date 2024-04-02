@@ -38,11 +38,12 @@ header {
 
 .top {
   font-size: 36px;
+  /* トップの下線を削除 */
   text-decoration: none;
   width: 36px;
-
 }
 
+/* リンクのリスト部分 */
 .nav ul {
   list-style: none;
   gap: 50px 50px;
@@ -51,18 +52,20 @@ header {
 /* ログイン系統を右端、上端から少し空白 */
   margin-right: 2rem;
   margin-top: 2rem;
-
 }
 
+/* リンクそのもの */
+.navlink {
+  /* トップの下線を削除 */
+  text-decoration: none;
+}
 
 
 /* すべてのページに適応 メイン */
 
 main {
 /* ページ全体を横書きで中央に */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* display:flexはかけない */
 }
 
 
