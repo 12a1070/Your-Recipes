@@ -17,6 +17,8 @@
   display: flex;
 /* 料理の項目の背景色 */
   background-color: #FFFBF1;
+  margin-bottom: 64px;
+/* paddingだと項目同士が繋がる */
 }
 
 /* 投稿の項目 */
@@ -24,6 +26,7 @@
 .list ul{
   /* リストの点を削除 */
   list-style: none;
+  /* background-color: #FFFBF1; */
 /* すでに縦になってるからflexは不要 */
 }
 
@@ -31,4 +34,5 @@
 .recipe_link{
 /* リンクの下線を削除 */
   text-decoration: none;
+    background-color: #FFFBF1;
 }
