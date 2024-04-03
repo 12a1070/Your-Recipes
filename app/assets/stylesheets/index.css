@@ -11,11 +11,12 @@
 }
 
 
-
 /* 投稿した料理 */
 .recipe {
 /* 横並び */
   display: flex;
+/* 料理の項目の背景色 */
+  background-color: #FFFBF1;
 }
 
 /* 投稿の項目 */
