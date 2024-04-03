@@ -1,10 +1,16 @@
 
+.main_wrapper{
+  margin: auto;
+  padding: 30px 160px;
+
+}
 
 /* 検索欄 */
 .search {
   display: flex;
-  margin-top: 5rem;
 }
+
+
 
 /* 投稿した料理 */
 .recipe {
@@ -16,11 +22,12 @@
 
 .list ul{
   /* リストの点を削除 */
-/* すでに縦になってるからfkexは不要 */
   list-style: none;
+/* すでに縦になってるからflexは不要 */
 }
 
 /* 料理の詳細リンク */
-.h3{
+.recipe_link{
+/* リンクの下線を削除 */
   text-decoration: none;
 }

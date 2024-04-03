@@ -20,7 +20,6 @@
 /* すべてのページに適応される設定 */
 html {
   font-family: sans-serif;
-  text-decoration: none;
   font-size: 14px;
 }
 
@@ -63,10 +62,10 @@ header {
 
 /* すべてのページに適応 メイン */
 
-main {
+/* main { */
 /* ページ全体を横書きで中央に */
 /* display:flexはかけない */
-}
+/* } */
 
 
 /* すべてのページに適応 フッター */
