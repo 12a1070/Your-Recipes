@@ -57,6 +57,8 @@ header {
 .navlink {
   /* トップの下線を削除 */
   text-decoration: none;
+  padding: 18px 66.3px;
+  background-color: #D9D9D9;
 }
 
 
