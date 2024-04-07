@@ -6,8 +6,9 @@
 }
 
 /* 検索欄 */
-.search {
+search {
   display: flex;
+  padding: 47px 159px;
 }
 
 

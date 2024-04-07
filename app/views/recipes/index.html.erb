@@ -1,5 +1,11 @@
 <div class="main_wrapper">
-  <%= render partial: 'search', class: "search" %>
+  <%= render partial: 'search' %>
+  <% if params[:word].present? %>
+    <div class="search_result_text">
+      <%= params[:word] %>の検索結果
+    </div>
+  <% end %>
+
   <div class="recipes">
     <% @recipes.each do | recipe| %>
       <div class="recipe">
