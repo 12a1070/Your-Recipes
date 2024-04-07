@@ -20,6 +20,7 @@ search {
   background-color: #FFFBF1;
   margin-bottom: 64px;
 /* paddingだと項目同士が繋がる */
+  width: 902px;
 }
 
 /* 投稿の項目 */
