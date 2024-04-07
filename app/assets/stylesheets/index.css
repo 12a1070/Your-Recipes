@@ -30,6 +30,7 @@ search {
   list-style: none;
   /* background-color: #FFFBF1; */
 /* すでに縦になってるからflexは不要 */
+  padding-left:  58px;
 }
 
 /* 料理の詳細リンク */
@@ -37,4 +38,5 @@ search {
 /* リンクの下線を削除 */
   text-decoration: none;
   background-color: #FFFBF1;
+  padding-left: 58px;
 }
