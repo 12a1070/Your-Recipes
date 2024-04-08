@@ -25,7 +25,7 @@
         </div>
         <% if user_signed_in? %>
           <% if recipe.user_id == current_user.id %>
-            <div class="edit"><%= link_to "編集する", edit_recipe_path(recipe) %></div>
+            <div class="edit"><%= link_to "編集する", edit_recipe_path(recipe) ,class:"edit"%></div>
           <% end %>
         <% end %>
       </div>

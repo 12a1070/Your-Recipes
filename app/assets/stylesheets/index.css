@@ -40,3 +40,10 @@ search {
   background-color: #FFFBF1;
   padding-left: 58px;
 }
+
+/* 編集へのリンク */
+.edit {
+  text-decoration: none;
+  margin-left: 200px;
+  margin-top: 150px;
+}
