@@ -11,17 +11,32 @@ search {
   padding: 47px 159px;
 }
 
+/* 検索結果 */
+.search_result_text {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 89px;
+}
+
 
 /* 投稿した料理 */
 .recipe {
 /* 横並び */
   display: flex;
+  /* 写真とそれ以外をa,bという区別に */
+  justify-content: space-between;
 /* 料理の項目の背景色 */
   background-color: #FFFBF1;
+/* paddingだと項目同士が繋がるからmarginで投稿同士に余白 */
   margin-bottom: 64px;
-/* paddingだと項目同士が繋がる */
+/* 投稿の幅と高さ */
   width: 922px;
   height: 206px;
+}
+
+.photo_box {
+/* 写真の有無問わずrecipeの30%を写真の領域に */
+  width: 30%;
 }
 
 .photo {
@@ -32,12 +47,19 @@ search {
 
 /* 投稿の項目 */
 
+.list_box {
+  display: flex;
+/* 詳細リンクと編集をa,bという区別に */
+  justify-content: space-between;
+  /* 親要素のrecipeの70%幅を占める */
+  width: 70%;
+}
+
+
 .list ul{
   /* リストの点を削除 */
   list-style: none;
   /* background-color: #FFFBF1; */
-/* すでに縦になってるからflexは不要 */
-  padding-left:  58px;
 }
 
 /* 料理の詳細リンク */
@@ -45,15 +67,11 @@ search {
 /* リンクの下線を削除 */
   text-decoration: none;
   background-color: #FFFBF1;
-  padding-left: 58px;
 }
 
 /* 編集へのリンク */
 .edit {
   text-decoration: none;
-  margin-left: 200px;
-  margin-top: 150px;
-  margin: auto;
-  padding-right: 21px;
-  padding-bottom: 22px;
+  font-size: 12px;
+  color: #586EAA;
 }

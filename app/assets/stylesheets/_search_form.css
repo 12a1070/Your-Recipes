@@ -3,6 +3,11 @@
   height: 63px;
 }
 
+.search_form {
+  margin-bottom: 64px;
+/* 検索の有無問わず余白 */
+}
+
 .btn_btn-primary{
   width: 28px;
   height: 17px;
