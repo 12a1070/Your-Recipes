@@ -20,7 +20,8 @@ search {
   background-color: #FFFBF1;
   margin-bottom: 64px;
 /* paddingだと項目同士が繋がる */
-  width: 902px;
+  width: 922px;
+  height: 206px;
 }
 
 .photo {
