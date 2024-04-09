@@ -23,6 +23,12 @@ search {
   width: 902px;
 }
 
+.photo {
+  width: 238px;
+  height: 206px;
+  margin-left: 21px;
+}
+
 /* 投稿の項目 */
 
 .list ul{
@@ -46,4 +52,7 @@ search {
   text-decoration: none;
   margin-left: 200px;
   margin-top: 150px;
+  margin: auto;
+  padding-right: 21px;
+  padding-bottom: 22px;
 }

@@ -10,7 +10,7 @@
     <% @recipes.each do | recipe| %>
       <div class="recipe">
         <% if recipe.photo_url.present? %>
-          <%= image_tag recipe.photo_url %>
+          <%= image_tag recipe.photo_url, class:"photo" %>
         <% end %>
         <div class ="list">
           <h2>
