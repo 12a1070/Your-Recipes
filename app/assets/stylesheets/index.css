@@ -55,21 +55,27 @@ search {
   width: 70%;
 }
 
+/* 料理の詳細リンク */
+.recipe_link {
+  /* リンクの下線を削除 */
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFBF1;
+
+}
+
 
 .list ul{
   /* リストの点を削除 */
   list-style: none;
+  margin-top: 75px;
 }
 
-
-/* 料理の詳細リンク */
-.recipe_link{
-/* リンクの下線を削除 */
-  text-decoration: none;
-  color: #000000;;
-  background-color: #FFFBF1;
-
+.list li{
+/* 投稿日時と作成者に余白 */
+  margin-top: 10%;
 }
+
 
 /* 編集へのリンク */
 .edit {
