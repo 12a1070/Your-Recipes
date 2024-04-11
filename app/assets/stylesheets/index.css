@@ -59,14 +59,16 @@ search {
 .list ul{
   /* リストの点を削除 */
   list-style: none;
-  /* background-color: #FFFBF1; */
 }
+
 
 /* 料理の詳細リンク */
 .recipe_link{
 /* リンクの下線を削除 */
   text-decoration: none;
+  color: #000000;;
   background-color: #FFFBF1;
+
 }
 
 /* 編集へのリンク */

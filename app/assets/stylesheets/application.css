@@ -33,8 +33,10 @@ header {
   height: 76px;
   display: flex;
   justify-content: space-between;
+  /* ヘッダーの余白・・・開いてない */
   margin: 0;
-  padding: 0;
+
+
 }
 
 .top {
