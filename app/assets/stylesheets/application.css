@@ -53,8 +53,8 @@ header {
   /* ログイン、登録を横並び */
   display: flex;
 /* ログイン系統を右端、上端から少し空白 */
-  margin-right: 2rem;
-  margin-top: 2rem;
+  margin-right: 50px;
+  margin-top: 24px;
 }
 
 /* リンクそのもの */
