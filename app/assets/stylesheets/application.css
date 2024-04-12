@@ -33,7 +33,7 @@ header {
   height: 76px;
   display: flex;
   justify-content: space-between;
-  /* ヘッダーの余白・・・開いてない */
+  /* ヘッダーの余白 */
   margin: 0;
 
 
@@ -49,7 +49,7 @@ header {
 /* リンクのリスト部分 */
 .nav ul {
   list-style: none;
-  gap: 50px 50px;
+  gap: 50px ;
   /* ログイン、登録を横並び */
   display: flex;
 /* ログイン系統を右端、上端から少し空白 */
