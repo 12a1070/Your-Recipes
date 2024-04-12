@@ -45,6 +45,7 @@
   justify-content: space-between;
   /* 親要素のrecipeの70%幅を占める */
   width: 70%;
+  padding-bottom: 75px;
 }
 
 /* 料理の詳細リンク */
@@ -58,12 +59,11 @@
 .list ul{
   /* リストの点を削除 */
   list-style: none;
-  margin-top: 75px;
 }
 
 .list li{
 /* 投稿日時と作成者に余白 */
-  margin-top: 10%;
+  padding-top: 16px;
 }
 
 /* 編集へのリンク */
