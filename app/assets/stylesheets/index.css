@@ -1,14 +1,8 @@
-
+/* ページ全体のメインの位置決め */
 .main_wrapper{
   margin: auto;
   padding: 30px 160px;
 }
-
-/* 検索欄 */
-/* search { */
-  /* display: flex; */
-  /* padding: 47px 159px; */
-/* } */
 
 /* 検索結果 */
 .search_result_text {
@@ -77,6 +71,6 @@
   text-decoration: none;
   font-size: 12px;
   color: #586EAA;
-  margin-top: 169px;
-  margin-right: 21px;
+  padding-top: 169px;
+  padding-right: 21px;
 }
