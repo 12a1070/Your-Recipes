@@ -2,14 +2,13 @@
 .main_wrapper{
   margin: auto;
   padding: 30px 160px;
-
 }
 
 /* 検索欄 */
-search {
-  display: flex;
-  padding: 47px 159px;
-}
+/* search { */
+  /* display: flex; */
+  /* padding: 47px 159px; */
+/* } */
 
 /* 検索結果 */
 .search_result_text {
@@ -17,7 +16,6 @@ search {
   color: #000000;
   margin-bottom: 89px;
 }
-
 
 /* 投稿した料理 */
 .recipe {
@@ -61,9 +59,7 @@ search {
   text-decoration: none;
   color: #000000;
   background-color: #FFFBF1;
-
 }
-
 
 .list ul{
   /* リストの点を削除 */
@@ -75,7 +71,6 @@ search {
 /* 投稿日時と作成者に余白 */
   margin-top: 10%;
 }
-
 
 /* 編集へのリンク */
 .edit {
