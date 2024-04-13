@@ -1,20 +1,38 @@
-<%= render partial: 'search'%>
+<div class="main_wrapper">
+  <%= render partial: 'search' %>
+  <% if params[:word].present? %>
+    <div class="search_result_text">
+      <%= params[:word] %>の検索結果
+    </div>
+  <% end %>
 
-<% @recipes.each do | recipe| %>
-  <div>
-    <% if recipe.photo_url.present? %>
-      <%= image_tag recipe.photo_url %>
+  <div class="recipes">
+    <% @recipes.each do | recipe| %>
+      <div class="recipe">
+        <div class ="photo_box">
+          <% if recipe.photo_url.present? %>
+            <%= image_tag recipe.photo_url, class:"photo" %>
+          <% end %>
+        </div>
+        <div class ="list_box">
+          <div class ="list">
+            <ul>
+              <h2>
+                <%= link_to recipe.title, recipe_path(recipe), class: "recipe_link"%>
+              </h2>
+              <h3>
+                <li>作成者:<%= recipe.user.name %></li>
+                <li>投稿日:<%= recipe.created_at.strftime("%Y年 %m月 %d日").to_s %></li>
+              </h3>
+            </ul>
+          </div>
+          <% if user_signed_in? %>
+            <% if recipe.user_id == current_user.id %>
+              <div class="edit"><%= link_to "編集する", edit_recipe_path(recipe), class:"edit"%></div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
     <% end %>
   </div>
-  <%= link_to recipe.title, recipe_path(recipe) %>
-  <div>作成者:</div>
-    <div><%= recipe.user.name %></div>
-  <div>投稿日:</div>
-    <%= recipe.created_at.strftime("%Y年 %m月 %d日").to_s %>
-    <%# ユーザーがログイン状態なら以下の処理をする。%>
-      <% if user_signed_in? %>
-        <% if recipe.user_id == current_user.id %>
-      <div><%= link_to "編集する", edit_recipe_path(recipe) %></div>
-        <% end %>
-    <% end %>
-<% end %>
+</div>
