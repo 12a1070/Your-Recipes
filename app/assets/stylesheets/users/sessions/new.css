@@ -1,4 +1,17 @@
-.login_wrapper{
-  margin-left: auto;
-  padding: 123px 129px;
+/* ログイン */
+h1 {
+  margin: 50px 123px;
+}
+
+/* ログインフォーム全体 */
+.login_wrapper {
+  width: 1034px;
+  height: 649px;
+  background-color: #EBEBEB;
+  margin-left: 123px;
+}
+
+
+.field {
+  margin: 63px 102px;
 }
