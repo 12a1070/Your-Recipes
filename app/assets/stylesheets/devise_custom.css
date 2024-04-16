@@ -1,0 +1,17 @@
+/* app/assets/stylesheets/devise_custom.css */
+
+/* Email input field */
+input[type="email"] {
+  width: 836px;
+  height: 77px;
+  border-radius:6px;
+  margin-top: 11px;
+}
+
+/* Password input field */
+input[type="password"] {
+  width: 836px;
+  height: 77px;
+  border-radius:6px;
+  margin-top: 11px;
+}
