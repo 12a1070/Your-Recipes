@@ -1,0 +1,42 @@
+/* ログイン */
+h1 {
+  margin: 50px 123px;
+}
+
+/* ログインフォーム全体 */
+.login_wrapper {
+  width: 1034px;
+  height: 649px;
+  background-color: #EBEBEB;
+/* レスポンシブ、スマホ対応、marginを取る手間の簡略 */
+  margin: 0 auto;
+  padding: 100px;
+}
+
+/* 入力フォーム */
+
+.mail {
+  width: 100%;
+/* login_wraooerの内径の100% */
+  display: flex;
+  justify-content: center;
+  /* 中央揃え。margin不要 */
+}
+
+.pass {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.actions {
+  height: 77px;
+  width: 435px;
+  border-radius:6px;
+/* テキスト中央 */
+  text-align: center;
+/* ボタンそのものを中央 */
+  margin: 100px auto;
+/* パスワードとの距離 */
+}
