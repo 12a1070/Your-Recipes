@@ -10,22 +10,28 @@
       </h2>
     </div>
 
-    <div class="field">
-      <%= f.label :ユーザー名 %><br />
-      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    <div class="user">
+      <h2>
+        <%= f.label :ユーザー名 %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+      </h2>
     </div>
 
     <div class="field">
-      <%= f.label :password %>
-        <% if @minimum_password_length %>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <h2>
+        <%= f.label :password %>
+          <% if @minimum_password_length %>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </h2>
     </div>
 
     <div class="field">
-      <%= f.label :password確認用 %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-    </div>
+      <h2>
+        <%= f.label :password確認用 %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </h2>
+  </div>
 
     <div class="actions">
       <%= f.submit "新規会員登録" %>
