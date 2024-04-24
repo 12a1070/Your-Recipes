@@ -2,23 +2,23 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
-  <div class="sinki">
-    <div class="field">
-      <h2>
+  <div class="new_wrapper">
+    <div class="mail">
+      <h4>
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
       </h2>
     </div>
 
-    <div class="user">
-      <h2>
+    <div class="name">
+      <h4>
         <%= f.label :ユーザー名 %><br />
         <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
       </h2>
     </div>
 
-    <div class="field">
-      <h2>
+    <div class="password">
+      <h4>
         <%= f.label :password %>
           <% if @minimum_password_length %>
         <% end %><br />
@@ -26,8 +26,8 @@
       </h2>
     </div>
 
-    <div class="field">
-      <h2>
+    <div class="pass">
+      <h4>
         <%= f.label :password確認用 %><br />
         <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
       </h2>
