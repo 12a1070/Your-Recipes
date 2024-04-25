@@ -10,7 +10,7 @@
       </h2>
     </div>
 
-    <div class="name">
+    <div class="mail">
       <h4>
         <%= f.label :ユーザー名 %><br />
         <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
@@ -19,9 +19,7 @@
 
     <div class="password">
       <h4>
-        <%= f.label :password %>
-          <% if @minimum_password_length %>
-        <% end %><br />
+        <%= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "new-password" %>
       </h2>
     </div>
