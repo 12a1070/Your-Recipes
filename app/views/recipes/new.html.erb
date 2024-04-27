@@ -1,33 +1,35 @@
-<h1>レシピ新規作成</h1>
+<div class ="main_wrapper">
+  <h1>レシピ新規作成</h1>
 
-<%= form_with model: @recipe, local: true do |form| %>
-  <%= render 'layouts/error_messages', model: form.object %>
-  <div>
-    <%= form.label :photo,"イメージ画像" %>
-    <%= form.file_field :photo %>
-  </div>
+  <%= form_with model: @recipe, local: true do |form| %>
+    <%= render 'layouts/error_messages', model: form.object %>
+    <div>
+      <%= form.label :photo,"イメージ画像" %>
+      <%= form.file_field :photo %>
+    </div>
 
-  <div>
-    <%= form.label :title,"タイトル" %>
-    <%= form.text_area :title %>
-  </div>
+    <div>
+      <%= form.label :title,"タイトル" %>
+      <%= form.text_area :title %>
+    </div>
 
-  <div>
-    <%= form.label :material,"必要な具材" %>
-    <%= form.text_area :material %>
-  </div>
+    <div>
+      <%= form.label :material,"必要な具材" %>
+      <%= form.text_area :material %>
+    </div>
 
-  <div>
-    <%= form.label :process,"料理手順" %>
-    <%= form.text_area :process %>
-  </div>
+    <div>
+      <%= form.label :process,"料理手順" %>
+      <%= form.text_area :process %>
+    </div>
 
-  <div>
-    <%= form.label :cooking_minute,"料理にかかる時間(分)" %>
-    <%= form.text_field :cooking_minute %>
-  </div>
+    <div>
+      <%= form.label :cooking_minute,"料理にかかる時間(分)" %>
+      <%= form.text_field :cooking_minute %>
+    </div>
 
-  <div>
-    <%= form.submit "登録する" %>
-  </div>
-<% end %>
+    <div>
+      <%= form.submit "登録する" %>
+    </div>
+  <% end %>
+</div>
