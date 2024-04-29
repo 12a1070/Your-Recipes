@@ -1,9 +1,5 @@
 /* ページタイトル */
-h1 {
-  /* margin-left: 147px; */
-  display: flex;
-  justify-content: left;
-}
+
 
 /* main_wrapperでメインの領域極め */
 .recipe_wrapper {
@@ -22,3 +18,5 @@ h1 {
   display: flex;
   flex-flow: column;
 }
+
+/* 登録ボタンはユーザーのnewページの「登録する」を流用 */
