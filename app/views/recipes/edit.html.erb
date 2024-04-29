@@ -1,35 +1,25 @@
-<div class ="main_wrapper">
-  <h1>レシピ編集</h1>
-
+<h1>レシピ編集</h1>
+<div class ="recipe_wrapper">
   <%= form_with model: @recipe, local: true do |form| %>
     <%= render 'layouts/error_messages', model: form.object %>
-    <div>
+    <div class="recipe_item">
       <%= form.label :photo,"イメージ画像" %>
       <%= form.file_field :photo %>
-    </div>
 
-    <div>
       <%= form.label :title,"タイトル" %>
       <%= form.text_area :title %>
-    </div>
 
-    <div>
       <%= form.label :material,"必要な具材" %>
       <%= form.text_area :material %>
-    </div>
 
-    <div>
       <%= form.label :process,"料理手順" %>
       <%= form.text_area :process %>
-    </div>
 
-    <div>
       <%= form.label :cooking_minute,"料理にかかる時間(分)" %>
       <%= form.text_field :cooking_minute %>
-    </div>
 
-    <div>
-      <%= form.submit "登録する" %>
-    </div>
+      <div class="subit">
+        <%= form.submit "登録する" %>
+      </div>
   <% end %>
 </div>

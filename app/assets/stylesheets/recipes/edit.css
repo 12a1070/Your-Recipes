@@ -1,1 +1,23 @@
+/* ページタイトル */
+h1 {
+  /* margin-left: 147px; */
+  display: flex;
+  justify-content: left;
+}
+
 /* main_wrapperでメインの領域極め */
+.recipe_wrapper {
+  margin: 0 auto;
+/* 背景色の幅 */
+  width: 1200px;
+  background-color: #FFFBF1;
+/* 中央揃え */
+  display: flex;
+  justify-content: center;
+}
+
+/* 投稿エリア */
+.recipe_item {
+  display: flex;
+  flex-flow: column;
+}
