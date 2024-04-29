@@ -23,7 +23,7 @@ input[type="text"] {
 
 /* 新規登録ボタン */
 /* レシピの登録、編集にも適応 */
-input[value="登録する"] {
+.submit {
   height: 77px;
   width: 100%;
   border-radius: 6px;
