@@ -7,6 +7,7 @@ h1 {
 
 /* main_wrapperでメインの領域極め */
 .recipe_wrapper {
+  font-weight:bold;
   margin: 0 auto;
 /* 背景色の幅 */
   width: 1200px;
