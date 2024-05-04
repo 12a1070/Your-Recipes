@@ -1,5 +1,7 @@
 /* ページタイトル */
-
+h1 {
+  margin-left: 147px;
+}
 
 /* main_wrapperでメインの領域極め */
 .recipe_wrapper {
@@ -8,6 +10,7 @@
 /* 背景色の幅 */
   width: 1200px;
   background-color: #FFFBF1;
+  padding: 156px 102px;
 /* 中央揃え */
   display: flex;
   justify-content: center;
@@ -17,6 +20,29 @@
 .recipe_item {
   display: flex;
   flex-flow: column;
+}
+
+/* 各入力要素 */
+/* 画像登録ボタン */
+/* recipe_itemクラスの中のphotoクラス */
+.recipe_item .photo {
+  margin-bottom: 24px;
+}
+
+/* 料理名 */
+.recipe_item .title {
+  margin-bottom: 57px;
+}
+
+/* 具材 */
+.recipe_item .material {
+  margin-bottom: 15px;
+}
+
+/* 調理時間 */
+/* 具材との距離が取れないため代替案 */
+.recipe_input_wrapper {
+  margin-bottom: 64px;
 }
 
 /* 登録ボタンはユーザーのnewページの「登録する」を流用 */

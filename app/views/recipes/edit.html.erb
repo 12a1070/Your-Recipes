@@ -4,22 +4,22 @@
     <%= render 'layouts/error_messages', model: form.object %>
     <div class="recipe_item">
       <%= form.label :photo,"イメージ画像" %>
-      <%= form.file_field :photo %>
+      <%= form.file_field :photo, class:"photo"%>
 
-      <%= form.label :title,"タイトル" %>
-      <%= form.text_area :title %>
+        <%= form.label :title,"タイトル" %>
+        <%= form.text_area :title, class:"title" %>
 
       <%= form.label :material,"必要な具材" %>
-      <%= form.text_area :material %>
+      <%= form.text_area :material, class:"material"%>
 
       <%= form.label :process,"料理手順" %>
-      <%= form.text_area :process %>
+      <%= form.text_area :process, class:"process"%>
 
       <%= form.label :cooking_minute,"料理にかかる時間(分)" %>
-      <%= form.text_field :cooking_minute  %>分
+      <%= form.text_field :cooking_minute, class:"cooking_minute" %>分
 
-      <div >
+      <div>
         <%= form.submit "登録する" ,class:"submit"%>
       </div>
-  <% end %>
+    <% end %>
 </div>
