@@ -45,4 +45,9 @@ h1 {
   margin-bottom: 64px;
 }
 
+/* 調理時間のテキストボックスの幅 */
+.time_label {
+  margin-top: 57px;
+}
+
 /* 登録ボタンはユーザーのnewページの「登録する」を流用 */
