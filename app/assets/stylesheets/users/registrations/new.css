@@ -1,16 +1,13 @@
 /* 登録フォーム全体 */
 .new_wrapper {
   width: 1034px;
-  height: 871px;
   background-color: #EBEBEB;
   text-align: center;
   margin: 0 auto;
-  padding: 100px;
 }
 
 
 /* メールとパスワードはログイン画面を流用 */
-
 
 /* input[type="text"]属性のtextのにcss付与 */
 /* これがユーザー名になる(検証ツールに表示) */
@@ -21,8 +18,11 @@ input[type="text"] {
   margin-top: 11px;
 }
 
+
+
 /* 新規登録ボタン */
-input[type="submit"] {
+/* レシピの登録、編集にも適応 */
+.submit {
   height: 77px;
   width: 100%;
   border-radius: 6px;
