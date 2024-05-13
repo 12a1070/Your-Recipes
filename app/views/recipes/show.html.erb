@@ -1,14 +1,18 @@
 <div class="show_wrapper">
-  <div class="料理の投稿基本情報">
-    <%= @recipe.title %>
-    <div>調理時間:</div>
-      <%= @recipe.cooking_minute %>分
-    <div>作成者: <%= @recipe.user.name %></div>
-    <% if user_signed_in? %>
+  <div class="料理の投稿基本情報。左右に分割">
+    <h3>
+      <%= @recipe.title %>
+      <div>調理時間:<%= @recipe.cooking_minute %>分 </div>
+    </h3>
+  </div>
+
+  <div class="料理の投稿基本情報。左右に分割">
+    作成者: <%= @recipe.user.name %>
+      <% if user_signed_in? %>
         <% if @recipe.user_id == current_user.id %>
-          <span><%= link_to "編集する", edit_recipe_path(@recipe) %></span>
+          <%= link_to "編集する", edit_recipe_path(@recipe) %>
         <% end %>
-    <% end %>
+      <% end %>
   </div>
 
   <div>
