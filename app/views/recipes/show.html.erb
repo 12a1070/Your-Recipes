@@ -15,23 +15,36 @@
       <% end %>
   </div>
 
-  <div>
+  <div class="写真の領域">
     <% if @recipe.photo_url.present? %>
       <%= image_tag @recipe.photo_url %>
     <% end %>
   </div>
-  <div>必要な具材</div>
-    <span><%= @recipe.material %></span>
-  <div>料理手順</div>
-    <span><%= @recipe.process %></span>
+
+  <div class="料理の項目名">
+    <h3>必要な具材</h3>
+  </div>
+  <div class="項目の詳細">
+    <%= @recipe.material %>
+  </div>
+
+  <div class="料理の項目名">
+    <h3>料理手順</h3>
+  </div>
+  <div class="項目の詳細">
+    <%= @recipe.process %>
+  </div>
+
     <% if user_signed_in? %>
       <% if current_user != @recipe.user %>
       <div class="recipe-favorite">
         <% if @recipe.favorited_by(current_user).blank? %>
-          <div>お気に入り</div><%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %></div>
+          <h2>お気に入り</h2>
+            <%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %></div>
         <% else %>
-          <div>お気に入り</div><%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete }, class: "btn btn-outline-success btn-sm" %></div>
-        <% end %>
+          <h2>お気に入り</h2>
+            <%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete}%></div>
+      <% end %>
       </div>
       <% end %>
     <% end %>
