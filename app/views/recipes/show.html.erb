@@ -1,18 +1,21 @@
 <div class="show_wrapper">
-  <div class="料理の投稿基本情報。左右に分割">
+
+  <div class="space-between">
     <h3>
       <%= @recipe.title %>
-      <div>調理時間:<%= @recipe.cooking_minute %>分 </div>
     </h3>
+    <h3>調理時間:<%= @recipe.cooking_minute %>分 </h3>
   </div>
 
-  <div class="料理の投稿基本情報。左右に分割">
-    作成者: <%= @recipe.user.name %>
-      <% if user_signed_in? %>
-        <% if @recipe.user_id == current_user.id %>
-          <%= link_to "編集する", edit_recipe_path(@recipe) %>
-        <% end %>
+  <div class="space-between">
+    <h4>
+      作成者: <%= @recipe.user.name %>
+    </h4>
+    <% if user_signed_in? %>
+      <% if @recipe.user_id == current_user.id %>
+        <%= link_to "編集する", edit_recipe_path(@recipe) %>
       <% end %>
+    <% end %>
   </div>
 
   <div class="写真の領域">

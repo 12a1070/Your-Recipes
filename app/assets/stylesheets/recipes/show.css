@@ -3,3 +3,8 @@
   margin: 48px 89px 369px;
 /* 上 左右 下 */
 }
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
