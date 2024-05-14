@@ -8,3 +8,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.show_photo{
+  width: 1093px;
+  height: 509px;
+}

@@ -18,9 +18,9 @@
     <% end %>
   </div>
 
-  <div class="写真の領域">
+  <div class="show_photo">
     <% if @recipe.photo_url.present? %>
-      <%= image_tag @recipe.photo_url %>
+      <%= image_tag @recipe.photo_url, class:"show_photo" %>
     <% end %>
   </div>
 
