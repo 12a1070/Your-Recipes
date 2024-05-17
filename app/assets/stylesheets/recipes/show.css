@@ -39,13 +39,28 @@
   text-decoration: none;
   width: 96px;
   height: 62px;
-  margin: 100px;
   background-color: #FFFBF1;
   border-radius: 50%;
   border-width: 2px;
   color: #000000;
-
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
+
+.favorite_btn_active {
+  text-decoration: none;
+  width: 96px;
+  height: 62px;
+  background-color: #F2C75A;
+  border-radius: 50%;
+  border-width: 2px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
 
 .recipe_delete{
 text-decoration: none;
