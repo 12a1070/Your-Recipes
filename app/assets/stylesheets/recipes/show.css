@@ -50,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 23px;
 }
 
 .favorite_btn_active {
@@ -63,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 23px;
   }
 
 
