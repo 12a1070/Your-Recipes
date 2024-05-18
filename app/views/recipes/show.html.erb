@@ -1,36 +1,58 @@
-<%= @recipe.title %>
-<div>調理時間:</div>
-  <span><%= @recipe.cooking_minute %>分</span>
-<div>作成者:</div>
-<span><%= @recipe.user.name %></span>
-<% if user_signed_in? %>
-    <% if @recipe.user_id == current_user.id %>
-      <span><%= link_to "編集する", edit_recipe_path(@recipe) %></span>
+<div class="show_wrapper">
+
+  <div class="space-between">
+    <h1><%= @recipe.title %></h1>
+    <h1>調理時間:<%= @recipe.cooking_minute %>分 </h1>
+  </div>
+
+  <div class="space-between">
+    <h2>作成者: <%= @recipe.user.name %></h2>
+    <% if user_signed_in? %>
+      <% if @recipe.user_id == current_user.id %>
+        <h2><%= link_to "編集する", edit_recipe_path(@recipe), class:   "show_recipe_edit" %></h2>
+      <% end %>
     <% end %>
-<% end %>
-<div>
-  <% if @recipe.photo_url.present? %>
-    <%= image_tag @recipe.photo_url %>
+  </div>
+
+  <div class="show_photo">
+    <% if @recipe.photo_url.present? %>
+      <%= image_tag @recipe.photo_url, class: "show_photo" %>
+    <% end %>
+  </div>
+
+  <div class="recipe_category">
+    <h3>必要な具材</h3>
+  </div>
+  <div class="category_text">
+    <%= @recipe.material %>
+  </div>
+
+  <div class="recipe_category">
+    <h3>料理手順</h3>
+  </div>
+  <div class="category_text">
+    <%= @recipe.process %>
+  </div>
+
+    <% if user_signed_in? %>
+      <div class="recipe-favorite">
+        <% if @recipe.favorited_by(current_user).blank? %>
+          <h4>お気に入り</h4>
+          <%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "favorite_btn" %>
+            <% else %>
+          <h4>お気に入り</h4>
+            <%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete}, class: "favorite_btn_active"  %>
+      <% end %>
+      </div>
+    <% end %>
+
+  <% if user_signed_in? %>
+    <% if @recipe.user_id == current_user.id %>
+      <div class="recipe_delete">
+        <h2>
+          <%= link_to 'レシピを削除する',recipe_path(@recipe.id), data: { turbo_method: :delete, turbo_confirm: " 本当に削除しますか?" }, class: "recipe_delete" %>
+        </h2>
+      </div>
+    <% end %>
   <% end %>
 </div>
-<div>必要な具材</div>
-  <span><%= @recipe.material %></span>
-<div>料理手順</div>
-  <span><%= @recipe.process %></span>
-  <% if user_signed_in? %>
-    <% if current_user != @recipe.user %>
-    <div class="recipe-favorite">
-      <% if @recipe.favorited_by(current_user).blank? %>
-        <div>お気に入り</div><%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "btn btn-success btn-sm" %></div>
-      <% else %>
-        <div>お気に入り</div><%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete }, class: "btn btn-outline-success btn-sm" %></div>
-      <% end %>
-    </div>
-    <% end %>
-  <% end %>
-
-<% if user_signed_in? %>
-  <% if @recipe.user_id == current_user.id %>
-    <%= link_to 'レシピを削除する',recipe_path(@recipe.id), data: { turbo_method: :delete, turbo_confirm: " 本当に削除しますか?" } %>
-  <% end %>
-<% end %>
