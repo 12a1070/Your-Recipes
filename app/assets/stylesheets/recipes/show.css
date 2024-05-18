@@ -67,5 +67,11 @@
 
 
 .recipe_delete{
-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  height: 36px;
+  width: 177px;
+  color: #FFFFFF;
+  background-color: #F34444;
+
 }
