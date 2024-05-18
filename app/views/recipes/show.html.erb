@@ -35,7 +35,6 @@
   </div>
 
     <% if user_signed_in? %>
-      <% if current_user != @recipe.user %>
       <div class="recipe-favorite">
         <% if @recipe.favorited_by(current_user).blank? %>
           <h4>お気に入り</h4>
@@ -45,7 +44,6 @@
             <%= link_to "解除する", recipe_favorite_path(@recipe,@recipe.favorited_by(current_user)),data: { "turbo_method": :delete}, class: "favorite_btn_active"  %>
       <% end %>
       </div>
-      <% end %>
     <% end %>
 
   <% if user_signed_in? %>
