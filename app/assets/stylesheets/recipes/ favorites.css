@@ -16,11 +16,7 @@
 }
 
 /* .list_box { */
-  /* display: flex; */
-  /* 詳細リンクと編集をa,bという区別に */
-  /* justify-content: space-between; */
-  /* 親要素のrecipeの70%幅を占める */
-  /* width: 70%; */
+/* recipe.indexで代用 */
 /* } */
 
 /* .recipe_link {
