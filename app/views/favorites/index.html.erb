@@ -4,7 +4,7 @@
     <div class="recipe">
       <div class="photo_box">
         <% if recipe.photo_url.present? %>
-          <%= image_tag recipe.photo_url, alt: recipe.title %>
+          <%= image_tag recipe.photo_url, alt: recipe.title, class: "photo"  %>
         <% end %>
       </div>
       <div class="list_box">
