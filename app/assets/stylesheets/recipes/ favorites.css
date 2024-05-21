@@ -15,6 +15,14 @@
   /* 写真とそれ以外を左右両端に */
 }
 
+/* .list_box { */
+  /* display: flex; */
+  /* 詳細リンクと編集をa,bという区別に */
+  /* justify-content: space-between; */
+  /* 親要素のrecipeの70%幅を占める */
+  /* width: 70%; */
+/* } */
+
 /* .recipe_link {
 recipe.indexのものを代用
 
