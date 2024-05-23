@@ -23,6 +23,11 @@ h1 {
   /* 中央揃え。margin不要 */
 }
 
+.new_text {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  /* テキストボックスに影 */
+}
+
 .pass {
   width: 100%;
   display: flex;
@@ -38,4 +43,6 @@ h1 {
 /* ボタンそのものを中央 */
   margin: 100px auto;
 /* パスワードとの距離 */
+  font-weight: bold;
+  font-size: 16px;
 }

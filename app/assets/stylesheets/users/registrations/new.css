@@ -1,22 +1,16 @@
+/* 新規登録 */
+h1 {
+  margin: 50px 123px;
+}
+
 /* 登録フォーム全体 */
 .new_wrapper {
   width: 1034px;
+  height: 649px;
   background-color: #EBEBEB;
-  text-align: center;
   margin: 0 auto;
 }
 
-
-/* メールとパスワードはログイン画面を流用 */
-
-/* input[type="text"]属性のtextのにcss付与 */
-/* これがユーザー名になる(検証ツールに表示) */
-input[type="text"] {
-  width: 836px;
-  height: 77px;
-  border-radius: 6px;
-  margin-top: 11px;
-}
 
 
 

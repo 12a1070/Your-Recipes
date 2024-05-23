@@ -24,14 +24,14 @@
     <h3>必要な具材</h3>
   </div>
   <div class="category_text">
-    <%= @recipe.material %>
+    <%= simple_format(@recipe.material) %>
   </div>
 
   <div class="recipe_category">
     <h3>料理手順</h3>
   </div>
   <div class="category_text">
-    <%= @recipe.process %>
+    <%= simple_format(@recipe.process) %>
   </div>
 
     <% if user_signed_in? %>
