@@ -12,22 +12,22 @@
 
     <div class="name">
       <h4>
-        <%= f.label :ユーザー名 %><br />
-        <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+        <%= f.label :ユーザー名, class:"form_label" %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"text_form"%>
       </h2>
     </div>
 
     <div class="password">
       <h4>
-        <%= f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.label :password, class:"form_label" %><br />
+        <%= f.password_field :password, autocomplete: "new-password", class:"text_form"%>
       </h2>
     </div>
 
     <div class="pass">
       <h4>
-        <%= f.label :password確認用 %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.label :password確認用, class:"form_label" %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"text_form" %>
       </h2>
   </div>
 

@@ -26,6 +26,8 @@ h1 {
 .new_text {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   /* テキストボックスに影 */
+  width: 836px;
+  height: 77px;
 }
 
 .pass {
