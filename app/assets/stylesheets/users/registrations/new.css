@@ -1,21 +1,25 @@
+/* 新規登録 */
+h1 {
+  margin: 50px 123px;
+}
+
 
 .new_wrapper {
   width: 1034px;
-  margin-bottom: 79px;
-  padding-left: 102px;
-  padding-top: 99px;
-  padding-bottom: 79px;
-  background-color: #EBEBEB;
+  height: 871px;
   margin: 0 auto;
+  background-color: #EBEBEB;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* text_form{ */
 /* ログインフォーム代用 */
 /* } */
-
-.form {
-  margin: 0 auto;
-}
 
 .entry {
   width: 435px;
