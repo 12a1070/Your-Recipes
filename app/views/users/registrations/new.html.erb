@@ -3,36 +3,36 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "users/shared/error_messages", resource: resource %>
   <div class="new_wrapper">
-    <div class="mail">
+    <div class="form">
       <h4>
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-      </h2>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"text_form"%>
+      </h4>
     </div>
 
-    <div class="name">
+    <div class="form">
       <h4>
         <%= f.label :ユーザー名, class:"form_label" %><br />
         <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"text_form"%>
-      </h2>
+      </h4>
     </div>
 
-    <div class="password">
+    <div class="form">
       <h4>
         <%= f.label :password, class:"form_label" %><br />
         <%= f.password_field :password, autocomplete: "new-password", class:"text_form"%>
-      </h2>
+      </h4>
     </div>
 
-    <div class="pass">
+    <div class="form">
       <h4>
         <%= f.label :password確認用, class:"form_label" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"text_form" %>
-      </h2>
+      </h4>
   </div>
 
     <div class="actions">
-      <%= f.submit "新規会員登録" %>
+      <%= f.submit "新規会員登録", class:"entry" %>
     </div>
   </div>
 <% end %>
