@@ -2,12 +2,12 @@
 
 /* Email input field */
 /* 検証のinput[type="email"に付与される */
-input[type="email"] {
+/* input[type="email"] {
   width: 836px;
   height: 77px;
   border-radius:6px;
   margin-top: 11px;
-}
+} */
 
 /* Password input field */
 /* input[type="password"] {

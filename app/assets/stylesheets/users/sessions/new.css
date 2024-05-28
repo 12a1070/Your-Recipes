@@ -1,11 +1,10 @@
-/* ログイン */
-h1 {
-  margin: 50px 123px;
+.base_wrapper {
+  padding: 120px;
 }
 
 /* ログインフォーム全体 */
 .login_wrapper {
-  width: 1034px;
+  /* width: 1034px; */
   height: 649px;
   background-color: #EBEBEB;
 /* レスポンシブ、スマホ対応、marginを取る手間の簡略 */
@@ -50,6 +49,5 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   border-width: 1px;
-  background-color: #FFFFFF;
   font-weight: bold;
 }

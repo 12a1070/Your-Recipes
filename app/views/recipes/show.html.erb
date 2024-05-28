@@ -1,9 +1,8 @@
+<div class="show_wrapper">
   <div class="space-between">
     <h1><%= @recipe.title %></h1>
     <h1>調理時間:<%= @recipe.cooking_minute %>分 </h1>
   </div>
-
-<div class="show_wrapper">
 
   <div class="space-between">
     <h2>作成者: <%= @recipe.user.name %></h2>
@@ -21,14 +20,14 @@
   </div>
 
   <div class="recipe_category">
-    <h3>必要な具材</h3>
+    <div>必要な具材</div>
   </div>
   <div class="category_text">
     <%= simple_format(@recipe.material) %>
   </div>
 
   <div class="recipe_category">
-    <h3>料理手順</h3>
+    <div>料理手順</div>
   </div>
   <div class="category_text">
     <%= simple_format(@recipe.process) %>
@@ -37,7 +36,7 @@
     <% if user_signed_in? %>
       <div class="recipe-favorite">
         <% if @recipe.favorited_by(current_user).blank? %>
-          <h4>お気に入り</h4>
+          <div class="favorite_text">お気に入り</div>
           <%= link_to "登録する", recipe_favorites_path(@recipe),data: { "turbo-method": :post}, class: "favorite_btn" %>
             <% else %>
           <h4>お気に入り</h4>

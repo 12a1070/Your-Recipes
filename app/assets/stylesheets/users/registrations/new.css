@@ -1,11 +1,5 @@
-/* 新規登録 */
-h1 {
-  margin: 50px 123px;
-}
-
 
 .new_wrapper {
-  width: 1034px;
   height: 871px;
   margin: 0 auto;
   background-color: #EBEBEB;
@@ -22,7 +16,7 @@ h1 {
 /* } */
 
 
-.input[type ="submit"] {
+input[type ="submit"] {
   width: 435px;
   height: 77px;
   background-color: #FFFFFF;

@@ -30,12 +30,17 @@
   height: 57px;
   display: flex;
   align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 17px;
 }
 
 .category_text {
   background-color: #F6F6F6;
   margin: 27px 0;
   padding: 16px 36px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .recipe-favorite{
@@ -43,14 +48,19 @@
   padding-right: 100px;
 }
 
+.favorite_text {
+  font-size: 24px;
+}
 
 .favorite_btn{
   text-decoration: none;
   width: 96px;
   height: 62px;
+  font-size: 16px;
   background-color: #FFFBF1;
   border-radius: 50%;
   border-width: 2px;
+  border-color: #EBEBEB;
   color: #000000;
   display: flex;
   justify-content: center;
