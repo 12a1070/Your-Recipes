@@ -13,6 +13,7 @@
   padding: 156px 102px;
 /* 中央揃え */
   display: flex;
+  flex-flow: column;
   justify-content: center;
 }
 
@@ -39,15 +40,26 @@
   margin-bottom: 15px;
 }
 
-/* 調理時間 */
-/* 具材との距離が取れないため代替案 */
-.recipe_input_wrapper {
-  margin-bottom: 64px;
+/* 料理手順 */
+.process {
+
 }
+
 
 /* 調理時間のテキストボックスの幅 */
 .time_label {
   margin-top: 57px;
+  display: flex;
+  flex-flow: column;
 }
 
+
 /* 登録ボタンはユーザーのnewページの「登録する」を流用 */
+
+.recipe_submit {
+  width: 435px;
+  height: 77px;
+  text-align: center;
+  margin-top: 64px;
+  margin-left: 200px;
+}
