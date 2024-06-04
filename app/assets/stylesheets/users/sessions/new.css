@@ -37,15 +37,16 @@
   justify-content: center;
 }
 
-.actions {
+
+.sign_on{
   height: 77px;
-  width: 435px;
-  border-radius:6px;
-/* テキスト中央 */
-  text-align: center;
-/* ボタンそのものを中央 */
-  margin: 100px auto;
-/* パスワードとの距離 */
+    width: 435px;
+    border-radius: 6px;
+    /* テキスト中央 */
+    text-align: center;
+    /* ボタンそのものを中央 */
+    margin: 100px auto;
+    /* パスワードとの距離 */
   font-weight: bold;
   font-size: 16px;
   border-width: 1px;

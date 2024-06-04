@@ -4,6 +4,21 @@
   padding: 47px 160px;
 }
 
+
+
+
+
+/* 検索ボタン */
+.search_btn {
+  width: 91px;
+  height: 63px;
+  background-color: #F6F6F6;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+
 /* 検索結果 */
 .search_result_text {
   font-size: 24px;
