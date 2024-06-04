@@ -1,8 +1,17 @@
+/* base_wrapper */
 
+/* 新規登録全体 */
 .new_wrapper {
-  height: 871px;
-  margin: 0 auto;
   background-color: #EBEBEB;
+    /* レスポンシブ、スマホ対応、marginを取る手間の簡略 */
+  margin: 0 auto;
+  padding: 100px;
+}
+
+/* 新規登録の文字の大きさ */
+.devise_title {
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .form {
@@ -15,14 +24,12 @@
 /* ログインフォーム代用 */
 /* } */
 
+/* 新規登録 */
+/* sign_on で代用*/
 
-/* input[type ="submit"] { */
-  /* background-color: #FFFFFF; */
-  /* border-color: #555555; */
-  /* border-radius: 6px 6px 6px 6px; */
-  /* border-width: 1px; */
-  /* font-weight: bold; */
-/* 新規登録、ログイン */
-  /* width: 435px; */
-  /* height: 77px; */
-/* } */
+
+/* ボタンを中央に */
+.actions {
+  display: flex;
+  justify-content: center;
+}

@@ -4,7 +4,7 @@
 
 /* ログインフォーム全体 */
 .login_wrapper {
-  /* width: 1034px; */
+  width: 1034px;
   height: 649px;
   background-color: #EBEBEB;
 /* レスポンシブ、スマホ対応、marginを取る手間の簡略 */
@@ -12,8 +12,9 @@
   padding: 100px;
 }
 
-/* 入力フォーム */
+/* devise_titleでログインの大きさ変更 */
 
+/* 入力フォーム */
 .mail {
   width: 100%;
 /* login_wraooerの内径の100% */
@@ -40,15 +41,13 @@
 
 .sign_on{
   height: 77px;
-    width: 435px;
-    border-radius: 6px;
-    /* テキスト中央 */
-    text-align: center;
+  width: 435px;
+  border-radius: 6px;
     /* ボタンそのものを中央 */
-    margin: 100px auto;
+  margin: 100px auto;
     /* パスワードとの距離 */
-  font-weight: bold;
   font-size: 16px;
   border-width: 1px;
   font-weight: bold;
+  background-color: #FFFFFF;
 }
