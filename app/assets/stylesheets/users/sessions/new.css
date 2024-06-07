@@ -30,6 +30,7 @@
   height: 77px;
   margin-top: 8px;
   border-style: none;
+  border-radius: 6px;
 }
 
 .pass {
