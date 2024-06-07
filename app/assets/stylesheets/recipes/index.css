@@ -63,6 +63,7 @@
   justify-content: space-between;
   /* 親要素のrecipeの70%幅を占める */
   width: 70%;
+  margin-left: 58px;
 }
 
 /* 料理の詳細リンク */
