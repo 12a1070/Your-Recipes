@@ -50,6 +50,7 @@
 
 .favorite_text {
   font-size: 24px;
+  font-weight: bold;
 }
 
 .favorite_btn{
@@ -74,6 +75,7 @@
   width: 96px;
   height: 62px;
   background-color: #F2C75A;
+  border-color: #EBEBEB;
   border-radius: 50%;
   border-width: 2px;
   color: #000000;
