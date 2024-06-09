@@ -31,13 +31,13 @@
 }
 
 /* 料理名 */
-.recipe_item .title {
+.title_box {
   margin-bottom: 57px;
 }
 
 /* 具材 */
-.recipe_item .material {
-  margin-bottom: 15px;
+.material_box {
+  margin-bottom: 15px ;
 }
 
 /* 料理手順 */
