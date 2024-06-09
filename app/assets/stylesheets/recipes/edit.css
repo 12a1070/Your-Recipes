@@ -41,9 +41,6 @@
 }
 
 /* 料理手順 */
-.process {
-
-}
 
 
 /* 調理時間のテキストボックスの幅 */
@@ -51,7 +48,6 @@
   margin-top: 57px;
   display: flex;
   flex-flow: column;
-
 }
 
 
@@ -61,10 +57,10 @@
   width: 435px;
   height: 77px;
   text-align: center;
+/* 下記を有効化すると余白ができる */
   margin-top: 64px;
-  margin-left: 200px;
+  margin-left: 302px;
   border-radius: 6px;
   font-weight: bold;
   background-color: #FFFFFF;
-
 }
