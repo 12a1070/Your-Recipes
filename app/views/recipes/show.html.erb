@@ -5,7 +5,7 @@
   </div>
 
   <div class="space-between">
-    <h2>作成者: <%= @recipe.user.name %></h2>
+    <div class="cock">作成者: <%= @recipe.user.name %></div>
     <% if user_signed_in? %>
       <% if @recipe.user_id == current_user.id %>
         <h2><%= link_to "編集する", edit_recipe_path(@recipe), class:   "show_recipe_edit" %></h2>

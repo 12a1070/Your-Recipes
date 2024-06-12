@@ -1,12 +1,18 @@
 .space-between {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 28px;
 }
 
 /* show画面全体の設定 */
 .show_wrapper {
   margin: 48px 89px 369px;
 /* 上 左右 下 */
+}
+
+.cock {
+  font-size: 16px;
+  font-weight:bold;
 }
 
 .show_recipe_edit{
@@ -42,6 +48,7 @@
 
 .recipe-favorite{
   display: flex;
+  align-items: center;
   padding-right: 100px;
 }
 
