@@ -4,7 +4,7 @@
 <div class ="recipe_wrapper">
   <%= form_with model: @recipe, local: true do |form| %>
     <%= render 'layouts/error_messages', model: form.object %>
-    <di class="recipe_item">
+    <div class="recipe_item">
       <%= form.label :photo,"イメージ画像" %>
       <%= form.file_field :photo, class:"photo"%>
 
@@ -25,7 +25,7 @@
       </div>
 
       <div>
-        <%= form.submit "登録する" ,class:"recipe_submit"%>
+        <%= form.submit "登録する", class:"recipe_submit"%>
       </div>
       </div>
     <% end %>
