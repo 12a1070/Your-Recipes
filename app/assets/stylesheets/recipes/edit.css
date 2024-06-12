@@ -42,7 +42,6 @@
 
 /* 料理手順 */
 
-
 /* 調理時間のテキストボックスの幅 */
 .time_label {
   margin-top: 57px;
@@ -51,7 +50,6 @@
 }
 
 /* 登録ボタンはユーザーのnewページの「登録する」を流用 */
-
 .recipe_submit {
   width: 435px;
   height: 77px;

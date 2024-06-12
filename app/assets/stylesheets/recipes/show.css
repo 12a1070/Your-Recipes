@@ -29,6 +29,7 @@
   align-items: center;
   font-size: 24px;
   font-weight: bold;
+
   padding-left: 17px;
 }
 
@@ -86,11 +87,13 @@
 
 .recipe_delete{
   text-decoration: none;
-  text-align: center;
   height: 36px;
   width: 177px;
+  line-height: 36px;
   color: #FFFFFF;
   background-color: #F34444;
   border-radius: 6px;
   font-size: 14px;
+  margin-top: 42px;
+  text-align: center;
 }
