@@ -1,15 +1,12 @@
 .space-between {
   display: flex;
   justify-content: space-between;
-  /* 左右両端に揃え */
 }
 
 /* show画面全体の設定 */
 .show_wrapper {
   margin: 48px 89px 369px;
 /* 上 左右 下 */
-  /* margin-top: 48px; */
-  /* margin-bottom: 369px; */
 }
 
 .show_recipe_edit{

@@ -25,7 +25,6 @@ html {
 
 body {
   margin: 0;
-  /* ヘッダーの余白 */
 }
 
 h2 {
@@ -38,7 +37,6 @@ header {
   background-color: #EBEBEB;
   color: #000000;
   font-weight: bold;
-  /* height: 76px; */
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
@@ -47,7 +45,6 @@ header {
 
 .top {
   font-size: 36px;
-  /* トップの下線を削除 */
   text-decoration: none;
   width: 36px;
   height: 44px;
@@ -57,16 +54,13 @@ header {
 /* リンクのリスト部分 */
 .nav ul {
   list-style: none;
-  /* ログイン、登録を横並び */
   display: flex;
-/* ログイン系統を右端、上端から少し空白 */
   gap: 30px;
   align-items: center;
 }
 
 /* リンクそのもの */
 .navlink {
-  /* トップの下線を削除 */
   text-decoration: none;
   padding: 18px 66.3px;
   background-color: #D9D9D9;

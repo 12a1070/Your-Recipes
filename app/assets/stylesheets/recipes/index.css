@@ -28,11 +28,8 @@
   display: flex;
   /* 写真とそれ以外を左端a,右端bという区別に */
   justify-content: space-between;
-/* 料理の項目の背景色 */
   background-color: #FFFBF1;
-/* paddingだと項目同士が繋がるからmarginで投稿同士に余白 */
   margin-bottom: 64px;
-/* 投稿の幅と高さ */
   width: 922px;
   height: 206px;
 }
@@ -43,11 +40,8 @@
 }
 
 .photo {
-  /* width: 238px; */
   width: 100%;
-  /* height: 206px; */
   height: 100%;
-  /* padding-left: 21px; */
 }
 
 /* 投稿の項目 */
@@ -63,19 +57,16 @@
 
 /* 料理の詳細リンク */
 .recipe_link {
-  /* リンクの下線を削除 */
   text-decoration: none;
   color: #000000;
   background-color: #FFFBF1;
 }
 
 .list ul{
-  /* リストの点を削除 */
   list-style: none;
 }
 
 .list li{
-/* 投稿日時と作成者に余白 */
   padding-top: 16px;
 }
 
