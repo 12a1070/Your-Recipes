@@ -1,11 +1,19 @@
-<div>あなたのお気に入り一覧</div>
-<% @favorite_recipes.each do |recipe| %>
-  <div class="recipe-item">
-    <% if recipe.photo_url.present? %>
-      <%= image_tag recipe.photo_url, alt: recipe.title %>
-    <% end %>
-    <div><%= link_to recipe.title, recipe_path(recipe) %></div>
-    <div>作成者: <%= recipe.user.name %></div>
-    <div>投稿日: <%= recipe.created_at.strftime("%Y年 %m月 %d日") %></div>
-  </div>
-<% end %>
+<div class="favorite_rapper">
+  <h1>あなたのお気に入り一覧</h1>
+  <% @favorite_recipes.each do |recipe| %>
+    <div class="recipe">
+      <div class="photo_box">
+        <% if recipe.photo_url.present? %>
+          <%= image_tag recipe.photo_url, alt: recipe.title, class: "photo"  %>
+        <% end %>
+      </div>
+      <div class="list_box">
+        <ul>
+          <li><%= link_to recipe.title, recipe_path(recipe), class: "recipe_link"%></li>
+          <li>作成者: <%= recipe.user.name %></</li>
+          <li>投稿日: <%= recipe.created_at.strftime("%Y年 %m月 %d日") %></h3></li>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>

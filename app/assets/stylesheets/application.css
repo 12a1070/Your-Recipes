@@ -23,6 +23,9 @@ html {
   font-size: 14px;
 }
 
+body {
+  margin: 0;
+}
 
 /* すべてのページに適応 ヘッダー */
 
@@ -30,42 +33,36 @@ header {
   background-color: #EBEBEB;
   color: #000000;
   font-weight: bold;
-  height: 76px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
-  /* ヘッダーの余白 */
-  margin: 0;
+  align-items: center;
 }
 
 .top {
   font-size: 36px;
-  /* トップの下線を削除 */
   text-decoration: none;
   width: 36px;
+  height: 44px;
+  margin-left: 31.65px;
 }
 
 /* リンクのリスト部分 */
 .nav ul {
   list-style: none;
-  gap: 50px ;
-  /* ログイン、登録を横並び */
   display: flex;
-/* ログイン系統を右端、上端から少し空白 */
-  margin-right: 50px;
-  margin-top: 24px;
+  gap: 30px;
+  align-items: center;
 }
 
 /* リンクそのもの */
 .navlink {
-  /* トップの下線を削除 */
   text-decoration: none;
   padding: 18px 66.3px;
   background-color: #D9D9D9;
 }
 
 /* すべてのページに適応 フッター */
-
-
 
 /* Body styling */
 container {

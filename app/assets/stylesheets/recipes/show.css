@@ -1,17 +1,24 @@
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
 /* show画面全体の設定 */
 .show_wrapper {
   margin: 48px 89px 369px;
 /* 上 左右 下 */
 }
 
-.space-between {
-  display: flex;
-  justify-content: space-between;
-/* 左右両端に揃え */
+.cock {
+  font-size: 16px;
+  font-weight:bold;
 }
 
 .show_recipe_edit{
   text-decoration: none;
+  font-size: 14px;
+  color: #586EAA;
 }
 
 .show_photo{
@@ -26,31 +33,44 @@
   height: 57px;
   display: flex;
   align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 17px;
 }
 
 .category_text {
   background-color: #F6F6F6;
   margin: 27px 0;
+  padding: 16px 36px;
+  font-size: 16px;
 }
 
 .recipe-favorite{
   display: flex;
+  align-items: center;
   padding-right: 100px;
 }
 
+.favorite_text {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 .favorite_btn{
   text-decoration: none;
   width: 96px;
   height: 62px;
+  font-size: 16px;
   background-color: #FFFBF1;
   border-radius: 50%;
   border-width: 2px;
+  border-color: #EBEBEB;
   color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 23px;
+  font-weight: bold;
 }
 
 .favorite_btn_active {
@@ -58,6 +78,7 @@
   width: 96px;
   height: 62px;
   background-color: #F2C75A;
+  border-color: #EBEBEB;
   border-radius: 50%;
   border-width: 2px;
   color: #000000;
@@ -65,16 +86,19 @@
   justify-content: center;
   align-items: center;
   margin-left: 23px;
+  font-weight: bold;
   }
 
 
 .recipe_delete{
   text-decoration: none;
-  text-align: center;
   height: 36px;
   width: 177px;
+  line-height: 36px;
   color: #FFFFFF;
   background-color: #F34444;
   border-radius: 6px;
   font-size: 14px;
+  margin-top: 42px;
+  text-align: center;
 }

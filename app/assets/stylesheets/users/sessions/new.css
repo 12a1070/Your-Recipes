@@ -1,6 +1,5 @@
-/* ログイン */
-h1 {
-  margin: 50px 123px;
+.base_wrapper {
+  padding: 120px;
 }
 
 /* ログインフォーム全体 */
@@ -8,19 +7,27 @@ h1 {
   width: 1034px;
   height: 649px;
   background-color: #EBEBEB;
-/* レスポンシブ、スマホ対応、marginを取る手間の簡略 */
   margin: 0 auto;
   padding: 100px;
 }
 
-/* 入力フォーム */
+/* devise_titleでログインの大きさ変更 */
 
+/* 入力フォーム */
 .mail {
   width: 100%;
-/* login_wraooerの内径の100% */
   display: flex;
   justify-content: center;
-  /* 中央揃え。margin不要 */
+}
+
+.text_form {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  /* テキストボックスに影 */
+  width: 836px;
+  height: 77px;
+  margin-top: 8px;
+  border-style: none;
+  border-radius: 6px;
 }
 
 .pass {
@@ -29,13 +36,13 @@ h1 {
   justify-content: center;
 }
 
-.actions {
+.sign_on{
   height: 77px;
   width: 435px;
-  border-radius:6px;
-/* テキスト中央 */
-  text-align: center;
-/* ボタンそのものを中央 */
+  border-radius: 6px;
   margin: 100px auto;
-/* パスワードとの距離 */
+  font-size: 16px;
+  border-width: 1px;
+  font-weight: bold;
+  background-color: #FFFFFF;
 }

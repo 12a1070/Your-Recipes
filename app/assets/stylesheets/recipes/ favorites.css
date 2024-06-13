@@ -1,0 +1,29 @@
+/* ページ全体の位置 */
+.favorite_rapper {
+  margin: 0 auto;
+  padding: 81px 197px;
+}
+
+/* recipe{ */
+/* recipe一覧ページのものを代用 */
+/* } */
+
+/* お気に入りの項目 */
+.favorite_post {
+  display: flex;
+  justify-content: space-between;
+  /* 写真とそれ以外を左右両端に */
+}
+
+/* .list_box { */
+/* recipe.indexで代用 */
+/* } */
+
+/* .recipe_link {
+recipe.indexのものを代用
+} */
+
+li {
+  list-style: none;
+  /* リンクの点を削除 */
+}
